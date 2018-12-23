@@ -12,7 +12,7 @@ model = {'InceptionResNetV2': InceptionResNetV2, 'Xception': Xception, 'Inceptio
 for key, model_type in model.items():
 
     model = model_type(weights='imagenet')
-    img_path = 'test_pictures/5.jpg'
+    img_path = 'test_pictures/imgonline-com-ua-Resize-vRSMPiWDERer.jpg'
     img = image.load_img(img_path, target_size=(224, 224))
     x = image.img_to_array(img)
     x = np.expand_dims(x, axis=0)
